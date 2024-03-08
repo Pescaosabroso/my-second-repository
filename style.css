@@ -1,0 +1,125 @@
+.content-block {
+    float: left;
+    height: 60%;
+    width: 90%;
+    overflow: hidden;;
+    vertical-align: baseline;
+}
+
+.content-block :hover {
+    box-shadow: 0.1rem 0.4rem #33332c;  
+    
+}
+
+#card {
+    width: 60% ;
+    max-width: 600px;
+    max-height: 700px;
+    padding: 0 auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.mainframe {
+    float: right;
+    width: 90%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.information {
+    display: block;
+}
+
+#name {
+    width: 100%;
+    max-width: 1200px;
+    height: 100px;
+    display: block;
+    background-color: #8b8b88;
+    text-align: left;
+    color: white;
+    height: 20%;
+}
+
+.card-info {
+    width: 100%;
+    max-width: 1200px;
+    height: 100px;
+}
+
+.card-info h2 {
+    width: 50%;
+    display: flexbox;
+    flex-direction: row;
+    background-color: whitesmoke;
+}
+
+#notch {
+    padding-bottom: 20%;
+    display: inline-flex;
+    flex-direction: row;
+
+}
+
+.type-grass {
+    background-color: white;
+    background-image: url(/img/energy-types.png);
+    background-position: -25px -50px;
+    width: 25px;
+    height: 25px;
+}
+
+.ability {
+    display: block;   
+}
+
+#ability-1 {
+    display: flex;
+}
+
+#ability-1 h4 {
+    position: top;
+}
+
+#ability-1 p {
+    position: bottom;
+}
+
+#ability-2 {
+    display: inline-block;
+}
+
+.type-grass #text-icon {
+     visibility: hidden;
+}
+
+.type-fire {
+    background-image: url(/img/energy-types.png);
+    background-position: -25px -50px;
+    width: 25px;
+    height: 25px;
+}
+
+.stats-section {
+    background-color: whitesmoke;
+    display: block;
+    display: flex;
+    flex-direction: row;
+}
+
+#weak {
+    display: flexbox;
+}
+
+#res {
+    display: flexbox;
+}
+
+#cost {
+    display: flexbox;
+}
+
+#stats-footer {
+}
