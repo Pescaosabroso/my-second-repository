@@ -2,63 +2,73 @@
 <html>
 <head>
     <title>The Apocrydex</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <img id="page-icon" src="" alt="">
+    <link href="https://db.onlinewebfonts.com/c/073a3b73a63a87e100f6bb8f003fc0d3?family=Flexo-Demi" rel="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="style">
+    <!-- <img id="page-icon" src="img/por editar/Eye.png" alt="favicon"> -->
    <!--  <p>The place for the dammned, the apocryph pokemon index</p> -->
 </head>
 <body>
-    <div class="content-block"><img id="card" src="/img/card_chikorita.png" alt=""></div>
-    <div class="mainframe">
-        <section class="information">
-            <div id="name"><h1>Chikorita</h1></div>
-            <span id="card-info">
-                <h2>Pokemon basico</h2>
-                <div id="notch">
-                   <p>PS</p>
-                   <P>60</P>
-                   <i class="type-grass" id="text-icon" alt=""></i>
-                </div>
-            </span>
-        </section>
-        <br>
-        <section class="ability">
-            <div id="ability-1">
-               <i class="energy"></i>
-                <h4>Síntesis</h4>
-                <p>Busca en tu baraja 1 carta de la misma energia y únela a 1 de tus Pokémon. Después, baraja las cartas de tu baraja.</p>
-                <!-- Effect description -->
-                <!-- <p>#efecto</p> -->
+    <div class="content-block">
+        <img src="img/card_chikorita.png" alt="Chikorita:3">
+    </div>
+    <div class="content-table">
+    <section class="information">
+        <div class="name">Chikorita</div>
+        <span class="card-info">
+            <div class="tier">Pokémon Básico</div>
+            <div class="notch">
+                <label class="ps">PS</label>
+                <label class="ps_num">60</label>
+                <img class="type-grass" id="info" src="https://th.bing.com/th/id/OIP.WJd7EFSossd2jagjba8k6AHaG4?rs=1&pid=ImgDetMain" alt="grass-type-enery">
             </div>
-            <div id="ability-2">
-                <span class="energy-left"> 
-                    <i class="type-grass" alt=""></i>
-                    <i class="energy" alt=""></i>
-                </span>
-                <h4>Hoja Afilada</h4>
-                <span>20</span>
+        </span>
+    </section>
+    <section class="ability">
+        <div class="ability-1">
+            <img class="type-colorless" id="skills" src="https://th.bing.com/th/id/R.1b70c6b6a60ae44afa17d98d29c7c05a?rik=xJitFLRd4G7JcA&pid=ImgRaw&r=0" alt="colorless-type-enery">
+            <label class="skillname-1">Síntesis</label>
+            <div class="skilldesc1">
+                <label>Busca en tu baraja 1 carta de energia <img class="text-icon" src="img/GRASS-b-icon.png" alt="grass-type-energy"> y únela a 1 de tus Pokémon. Después, baraja las cartas de tu baraja.
+                </label>
             </div>
-        </section>
-        <section class="stats-section">
-            <div id="weak" class="stats">
-                <h4>Debilidad</h4>
-                <span>
-                    <i class="type-fire" class="stats" alt=""></i> <!--los tipo kamdela :v-->
-                    <p>X2</p>
-                </span>
-            </div>
-            <div id="res" class="stats">
-                <h4>Resistencia</h4> <!--ninguna, necesita ir al gym... literal XD-->
-            </div>
-            <div id="cost" class="stats">
-                <h4>Coste de retirada</h4>
-                <i class="energy" alt=""></i>
-            </div>
-        <div id="stats-footer">
-            <a href="https://www.youtube.com/watch?v=S0aXAm0jqd0">Lugar de Origen</a>
-            <p>Se advierte no ponerle turbante porque pasa esto 🖢🖢🖢</p>
-            <img id="promo" src="" alt="">
         </div>
-        </section>
+        <div class="ability-2">
+            <span> 
+                <img class="type-grass" id="info" src="https://th.bing.com/th/id/OIP.WJd7EFSossd2jagjba8k6AHaG4?rs=1&pid=ImgDetMain" alt="grass-type-enery">
+                <img class="type-colorless" id="skills" src="https://th.bing.com/th/id/R.1b70c6b6a60ae44afa17d98d29c7c05a?rik=xJitFLRd4G7JcA&pid=ImgRaw&r=0" alt="colorless-type-enery">
+            </span>
+                <label class="skillname-2">Hoja Afilada</label>
+            <span class="skilldesc2">20</span>
+        </div>
+    </section>
+    <section class="stats-section">
+        <div class="weakness">
+            <label>Debilidad</label>
+            <span class="w-stats">
+                <img class="type-fire" id="weakness" src="https://www.clipartmax.com/png/small/83-830894_fire-type-pokemon-symbol-pokemon-fire-type-logo.png" alt="fire-type-enery">
+                <label class="weakness-num">X2</label>
+            </span>
+        </div>
+        <div class="resistance">
+            <label>Resistencia</label>
+        </div>
+        <div class="retreat">
+            <label>Coste de retirada</label>
+            <img class="type-colorless" id="retreat" src="https://th.bing.com/th/id/R.1b70c6b6a60ae44afa17d98d29c7c05a?rik=xJitFLRd4G7JcA&pid=ImgRaw&r=0" alt="colorless-type-enery">   
+        </div>
+    </section>
+        <div class="stats-footer">
+            <a href="https://www.youtube.com/watch?v=S0aXAm0jqd0">Lugar de Origen</a>
+            <div class="footnote">
+                <label class="fn-text">🖢Se advierte no ponerle turbante porque pasa esto</label>
+                <img src="img/icono_promo_pron.png" alt="Promo Card">
+            </div>
+        </div>
     </div>
 </body>
 </html>
