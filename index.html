@@ -93,8 +93,10 @@
             <section class="fo-row">    
                 <form class="form">
                     <input type="email" class="email" placeholder="Email">
-                    <div class="form-envelope">
-                        <select name="country" class="country"></select>
+                    <div class="form-envelope">                                                
+                        <select name="country" class="country" id="country">
+                            <option value="">Select your country</option>
+                        </select>
                         <input type="date" class="date">
                     </div>
                 </form>
@@ -106,7 +108,7 @@
                     </div>
                     <div class="checklabel">
                         <input type="checkbox">
-                        <label for="">El Monastery (our official online shop)</label>
+                        <label for="">The Monastery (our official online shop)</label>
                     </div>
                     <div class="checklabel">
                         <input type="checkbox">
@@ -161,5 +163,18 @@
         </span>
         <a id="goback" href="#name">Return to Stats</a>
     </footer> 
+    <script src="countrylist.js"></script>
+    <script>
+
+
+        import { countries } from "countrylist.js";
+        countries.forEach((country) => {
+        const countryselect = document.createElement("option");
+        countryselect.value = country;
+        countryselect.textContent = country;
+        document.getElementById("country").appendChild(countryselect);
+        });
+        
+    </script>
 </body>
 </html>
