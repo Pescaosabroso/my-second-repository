@@ -15,11 +15,12 @@
         <section class="pokedex">
             <div class="query-square">
                 <section class="content-block">
-                    <img src="img/card_chikorita.png" alt="Chikorita:3">
+                    <img src="img/card_chikorita.png" alt="Chikorita:3" id="card">
                 </section>
                 <section class="buttons">
                     <a href="">This is a button that reappears</a>
                     <a href="" class="smol">This button too :D</a>
+                    <a href="" id="apiButton">Change Pokemon</a>
                 </section>
             </div>
             <section class="content-table">
@@ -79,6 +80,8 @@
             <section class="buttons2">
                 <a href="">This is a button that reappears</a>
                 <a href="">This button too :D</a>
+                
+                <button id="apiButton2">Change Pokemon</button>
             </section>
         </section>
         <section class="divider">
@@ -164,17 +167,6 @@
         <a id="goback" href="#name">Return to Stats</a>
     </footer> 
     <script src="countrylist.js"></script>
-    <script>
-
-
-        import { countries } from "countrylist.js";
-        countries.forEach((country) => {
-        const countryselect = document.createElement("option");
-        countryselect.value = country;
-        countryselect.textContent = country;
-        document.getElementById("country").appendChild(countryselect);
-        });
-        
-    </script>
+    <script src="fetch.js"></script>
 </body>
 </html>
