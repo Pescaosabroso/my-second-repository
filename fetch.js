@@ -7,21 +7,7 @@ const img = document.getElementById("card")
       .then(data => {
       img.src = data.data.images.small;
       })};
-   
-      
 changer.addEventListener("click", replaceImage);
 
-
-
-// const changer2 = document.getElementsById(apiButton2);
-
-// function replaceImage() {
-//     fetch('https://api.pokemontcg.io/v2/cards/bw1-18')
-//       .then(response => response.json())
-//       .then(data => {
-//         const cardImage = document.getElementById("card");
-//         cardImage.src = data.url;
-//       })};
-      
-      
-// changer2.addEventListener("click", replaceImage);
+const changer2 = document.getElementById("apiButton");      
+changer2.addEventListener("click", replaceImage);

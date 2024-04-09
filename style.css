@@ -1,3 +1,8 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -10,7 +15,6 @@
 .pokedex{
     display: flex;
     flex-direction: column;
-    justify-content: ;
     width: 100%;
     background-color: white;
     padding-bottom: 2em;
