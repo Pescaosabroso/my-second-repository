@@ -150,8 +150,8 @@ body {
     width: 100%;
 }
 
-.tier{
-    width: 90%;
+.tier {
+    text-overflow: ellipsis;
     height: 1.8rem;
     background-color: whitesmoke;
     color: black;
@@ -159,8 +159,18 @@ body {
     font-size: 125%;
     padding: 15px 0px 0px 10px;
     font-family: "flexo-demi" , Arial, Helvetica, sans-serif;   
+} 
+
+#tier {
+    width: 50%;
+    display: flex;
+    flex-grow: 1;
+    gap: 1px;
 }
 
+#subtier {
+    padding-left: 0px;
+}
 .notch {
     border-bottom-left-radius: 10px;
     height: 3.3rem;
