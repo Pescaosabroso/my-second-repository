@@ -114,7 +114,6 @@ body {
 .content-table {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     font-family: "flexo-demi" , Arial, Helvetica, sans-serif ;
     width: 100%;   
 }
@@ -788,10 +787,6 @@ body {
     padding-bottom: 15px;
 }
 
-.social-tag {
-    display: none;
-}
-
 .sm-icon {
     width: 2.3em;
     margin: 0px 2px 5px 0px;
@@ -804,12 +799,6 @@ body {
     padding-bottom: 15px;
 }
 
-.copyright img {
-    width: 10rem;
-    padding: 0.5rem;
-    margin-bottom: 5px;
-}
-
 .copyright a { 
     text-decoration: none;
     color: white;
@@ -820,17 +809,10 @@ body {
 }
 
 .disclaimer {
-    text-align: justify; 
+    text-align: left; 
     font-size: 12px;
     font-weight: 100;
     color: whitesmoke;
-}
-
-.legal-owners {
-    color: white;
-    text-align: justify; 
-    font-size: 13px;
-    font-weight: 600;
 }
 
 #goback {
@@ -862,18 +844,6 @@ body {
     .copyright {
         width: 33%;
         margin-left: 10px;
-    }
-
-    .social-tag {
-        display: flex;
-        flex-direction: column;
-        font-size: larger;
-    }
-
-    .social-tag label {
-        margin-top: 10px;
-        margin-bottom: 15px;
-        margin: 10px 10px 15px 5px;
     }
 
     .sm-icons {
