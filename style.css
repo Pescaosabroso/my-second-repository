@@ -227,6 +227,13 @@ body {
     font-weight: 500px;
 }
 
+#ability {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500px;
+    color: #E3350D;
+}
+
 .skillname-1 {
     margin-left: 10px;
 }
@@ -245,6 +252,13 @@ body {
 .text-icon {
     width: 1rem;
     height: 1rem;
+}
+
+#attack {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500px;
+    color: #1b0de3;
 }
 
 .ability-2{
@@ -587,6 +601,7 @@ body {
     height: 1.5rem;
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-left: 5px;
     margin-bottom: 5px;
     border: hidden;
     border-radius: 5px;
@@ -614,12 +629,17 @@ body {
     height: 1.5rem;
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-left: 5px;
     border: hidden;
     border-radius: 5px;
     font-family: "Roboto", sans-serif;
     font-size: medium;
     font-weight: 600;
     color: grey;
+}
+
+.date ::placeholder {
+    content: "Date";
 }
 
 @media screen and (min-width: 768px) {
