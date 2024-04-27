@@ -34,6 +34,7 @@ const footNoteTitle = document.getElementById("stats-link");
 const footNote = document.getElementById("fn-text");
 const footLogo = document.getElementById("promo");
 
+
 const replaceData = () => {
 fetch('https://api.pokemontcg.io/v2/cards/sm3-71')
       .then(response => response.json())
@@ -43,9 +44,9 @@ fetch('https://api.pokemontcg.io/v2/cards/sm3-71')
       pokemonType.textContent = data.data.supertype;
       pokemonType2.textContent = data.data.subtypes;
       hitPoints.textContent = data.data.hp;
-      pokemonEnergy.src = "https://th.bing.com/th/id/OIP.QygT1tC9ps5pLZvmLBmwswAAAA?rs=1&pid=ImgDetMain";
+      // pokemonEnergy.src = "https://th.bing.com/th/id/OIP.QygT1tC9ps5pLZvmLBmwswAAAA?rs=1&pid=ImgDetMain";
+      pokemonEnergy.src = data.data.types;
       abilityType.textContent = data.data.abilities[0].type;
-      // damage1.textContent = data.data.attacks[0].damage;
 
 
       
