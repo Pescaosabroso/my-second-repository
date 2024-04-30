@@ -15,65 +15,84 @@
         <section class="pokedex">
             <div class="query-square">
                 <section class="content-block">
-                    <img src="img/card_chikorita.png" alt="Chikorita:3" id="card">
+                    <img src="public/img/card_chikorita.png" alt="Chikorita:3" id="card">
                 </section>
                 <section class="buttons">
-                    <a href="">This is a button that reappears</a>
-                    <a href="" class="smol">This button too :D</a>
+                    <a href="" id="button-a"></a>
+                    <a href="" class="smol" id="button-b">Explore More Cards</a>
                 </section>
             </div>
             <section class="content-table">
                 <section class="information">
-                    <div class="name" id="namex">Chikorita</div>
+                    <div class="name" id="namex"></div>
                     <span class="card-info">
-                    <div class="tier" id="tier">Basic Pokémon</div>
-                    <div class="tier" id="subtier"></div>
-                    <div class="notch">
-                        <label class="ps" id="ps">HP</label>
-                        <label class="ps_num" id="ps_num">60</label>
-                        <img class="type-grass" id="info" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aba1a756-d955-43f6-a2e9-5b7d60406854/d50w40k-75281ddb-5dc8-4eb8-9321-d5c901815eed.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FiYTFhNzU2LWQ5NTUtNDNmNi1hMmU5LTViN2Q2MDQwNjg1NFwvZDUwdzQway03NTI4MWRkYi01ZGM4LTRlYjgtOTMyMS1kNWM5MDE4MTVlZWQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.yGkym2UfwaoUVHBldwSE9pHM9Y0tgJMSzvVGLEh6HDI" alt="grass-type-enery">
-                    </div>
-                    </span>
-               </section>
-                <section class="ability">
-                    <!-- <section id="abilities"></section>
-                    <section id="attacks"></section> -->
-                    <div id="ability"></div>
-                    <div class="ability-1">
-                        <span id="ability-energy">
-                            <img class="type-colorless" id="skills" src="https://th.bing.com/th/id/R.1b70c6b6a60ae44afa17d98d29c7c05a?rik=xJitFLRd4G7JcA&pid=ImgRaw&r=0" alt="colorless-type-enery">
-                        </span>
-                        <label class="skillname-1" id="skillname-1">Synthesis</label>
-                        <span class="skilldesc2" id="damage1"></span>
-                        <div class="skilldesc1" id="skilldesc1">
-                             <label>Search your deck for a <img class="text-icon" src="img/GRASS-b-icon.png" alt="grass-type-energy"> Energy card and attach it to 1 of your Pokémon. Then, shuffle your deck.
-                            </label>
+                        <div class="type">
+                            <div class="tier" id="subtier"></div>
+                            <div class="tier" id="tier"></div>
                         </div>
-                    </div>
-                    <div class="ability-2" id="ability2">
-                        <div id="attack"></div>
-                        <span id="attack-energy"> 
-                            <img class="type-grass" id="at-img1" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aba1a756-d955-43f6-a2e9-5b7d60406854/d50w40k-75281ddb-5dc8-4eb8-9321-d5c901815eed.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FiYTFhNzU2LWQ5NTUtNDNmNi1hMmU5LTViN2Q2MDQwNjg1NFwvZDUwdzQway03NTI4MWRkYi01ZGM4LTRlYjgtOTMyMS1kNWM5MDE4MTVlZWQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.yGkym2UfwaoUVHBldwSE9pHM9Y0tgJMSzvVGLEh6HDI" alt="grass-type-enery">
-                            <img class="type-colorless" id="at-img2" src="https://th.bing.com/th/id/R.1b70c6b6a60ae44afa17d98d29c7c05a?rik=xJitFLRd4G7JcA&pid=ImgRaw&r=0" alt="colorless-type-enery">
-                        </span>
-                        <label class="skillname-2" id="skillname-2">Razor Leaf</label>
-                        <span class="skilldesc2" id="damage2">20</span>
-                    </div>
-                </section>
+                        <div class="notch">
+                            <label class="ps" id="ps"></label>
+                            <label class="ps_num" id="ps_num"></label>
+                            <div id="info"></div>
+                        </div>
+                    </span>
+               </section>               
+                <section class="ability">
+                    <section id="abilities" class="ability-1" >
+                        <div id="ability-a" class="ability-header"></div>
+                        <div >
+                            <span id="ab-img"></span>                
+                            <label class="skillname-1" id="skillname-1"></label>
+                            <span class="skilldesc2" id="damage1"></span>
+                            <div class="skilldesc1" id="skilldesc1">
+                                <!-- <label>Search your deck for a <img class="text-icon" src="public/img/GRASS-b-icon.png" alt="grass-type-energy"> Energy card and attach it to 1 of your Pokémon. Then, shuffle your deck.</label> -->
+                            </div>
+                        </div>
+                        <div id="ability-b" class="ability-header"></div>
+                        <div>
+                            <span id="ab-img2"></span>
+                            <label class="skillname-2" id="skillname-2"></label>
+                            <span class="skilldesc2" id="damage2"></span>
+                            <div class="skilldesc1" id="skilldesc2"></div>
+                        </div>
+                    </section>
+                    <section id="attacks">
+                        <div id="attack-a" class="attack-header"></div>                    
+                        <div class="ability-1">
+                            <span id="at-img"></span>                         
+                            <label class="skillname-1" id="skillname-3"></label>                    
+                            <span class="skilldesc2" id="damage3"></span>                      
+                            <div class="skilldesc1" id="skilldesc3"></div>                         
+                        </div>
+                        <div id="attack-b" class="attack-header"></div>
+                        <div >
+                            <span id="at-img2"></span>  
+                            <label class="skillname-2" id="skillname-4"></label>
+                            <span class="skilldesc2" id="damage4"></span>
+                            <div class="skilldesc1" id="skilldesc4"></div>
+                        </div>
+                    </section>
+                </section>          
                 <section class="stats-section" id="stats">
-                    <div class="weakness" id="w-stats">
+                    <div class="weakness">
                         <label>Weakness</label>
                         <span class="w-stats">
-                            <img class="type-fire" id="weakness" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aba1a756-d955-43f6-a2e9-5b7d60406854/d50w437-315a34c4-85c2-4d07-ae4d-6b42a25233bf.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FiYTFhNzU2LWQ5NTUtNDNmNi1hMmU5LTViN2Q2MDQwNjg1NFwvZDUwdzQzNy0zMTVhMzRjNC04NWMyLTRkMDctYWU0ZC02YjQyYTI1MjMzYmYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.kytndezX-kNW72WN893L_sOKoTnQYmvnqvJ79VVV8w8" alt="fire-type-enery">
-                            <label class="weakness-num">X2</label>
+                            <div id="weakness"></div>
+                            <label class="weakness-num" id="weakness-num"></label>
                         </span>
                     </div>
-                    <div class="resistance" id="res-stats">
+                    <div class="resistance">
                         <label>Resistance</label>
+                        <div class="w-stats">
+                            <div id="resistance"></div>
+                            <label class="weakness-num" id="resistance-num"></label>
+                        </div>
                     </div>
-                    <div class="retreat" id="ret-stats">
+                    <div class="retreat">
                         <label>Retreat Cost</label>
-                        <img class="type-colorless" id="retreat" src="https://th.bing.com/th/id/R.1b70c6b6a60ae44afa17d98d29c7c05a?rik=xJitFLRd4G7JcA&pid=ImgRaw&r=0" alt="colorless-type-enery">   
+                        <span class="w-stats">
+                            <div id="retreat"></div>
+                        </span>   
                     </div>
                 </section>
                 <section class="stats-footer">
@@ -85,8 +104,8 @@
                 </section>
             </section>
             <section class="buttons2">
-                <a href="">This is a button that reappears</a>
-                <a href="">This button too :D</a>
+                <a href="" id="button-c"></a>
+                <a href="" id="button-d">Explore More Cards</a>
             </section>
             <button id="apiButton">Change Pokemon</button>
         </section>
@@ -140,15 +159,15 @@
             </section>
             <section class="social-media">
                 <div class="sm-icons">
-                    <a href="https://www.facebook.com/pokemon"><img class="sm-icon" src="img/socialmedia/Facebook_white_logo.png" alt="https://assets.pokemon.com/static2/_ui/img/footer/social-icons.png" alt="Facebook_white_logo"></a>
+                    <!-- <a href="https://www.facebook.com/pokemon"><img class="sm-icon" src="img/socialmedia/Facebook_white_logo.png" alt="https://assets.pokemon.com/static2/_ui/img/footer/social-icons.png" alt="Facebook_white_logo"></a>
                     <a href="https://www.youtube.com/user/Pokemon"><img class="sm-icon" src="img/socialmedia/YouTube_white_logo.png" alt="YouTube_white_logo"></a>
                     <a href="https://www.twitter.com/pokemon"><img class="sm-icon" src="img/socialmedia/X_white_logo.png" alt="X_white_logo"></a>
                     <a href="https://www.instagram.com/pokemon"><img class="sm-icon" src="img/socialmedia/Instagram_white_logo.png" alt="Instagram_white_logo"></a>
-                    <a href="https://www.pinterest.com/pokemon"><img class="sm-icon" src="img/socialmedia/Pinterest_white_logo.png" alt="Pinterest_white_logo"></a>
+                    <a href="https://www.pinterest.com/pokemon"><img class="sm-icon" src="img/socialmedia/Pinterest_white_logo.png" alt="Pinterest_white_logo"></a> -->
                 </div>
             </section>
             <section class="copyright">
-                <a href="https://caru.bbbprograms.org/seal/Confirmation/1596150491"><img src="/img/thepokemoncompanyinternational-seal-1596150491.png" alt="BBB_NATIONAL_PROGRAMS_POKEMON_COMPANY"></a> 
+                <a href="https://caru.bbbprograms.org/seal/Confirmation/1596150491"><img src="public/img/thepokemoncompanyinternational-seal-1596150491.png" alt="BBB_NATIONAL_PROGRAMS_POKEMON_COMPANY"></a> 
                 <a href="https://www.pokemon.com/us/terms-of-use/">Terms of Use</a>
                 <a href="https://www.pokemon.com/us/privacy-notice/">privacy Notice</a>
                 <a href="https://www.pokemon.com/us/cookie-page/">Cookie Page</a>

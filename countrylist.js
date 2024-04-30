@@ -6,13 +6,18 @@ function getCountryNames() {
   ];
 }
 
-export const countries = getCountryNames();
+const countries = getCountryNames();
 
 const selectElement = document.getElementById('country');
 
+function displayCountries() {
+const countries = getCountryNames();
 countries.forEach(country => {
-  const option = document.createElement('option');
-  option.value = country.code;
-  option.textContent = country.name;
-  selectElement.appendChild(option);
+  const op = document.createElement('option');
+  op.value = country.code;
+  op.textContent = country.name;
+  selectElement.appendChild(op);
 });
+}
+
+selectElement.addEventListener("click", displayCountries;
