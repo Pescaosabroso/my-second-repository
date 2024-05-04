@@ -6,7 +6,7 @@ function getCountryNames() {
   ];
 }
 
-const countries = getCountryNames();
+export const countries = getCountryNames();
 
 const selectElement = document.getElementById('country');
 
@@ -20,4 +20,4 @@ countries.forEach(country => {
 });
 }
 
-selectElement.addEventListener("click", displayCountries;
+selectElement.addEventListener("load", displayCountries);
