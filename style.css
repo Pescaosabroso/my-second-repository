@@ -33,7 +33,7 @@ body {
 }
 
 .mobile-dropdown-menu.active {
-    bottom: 700px;
+    top: 0px;
 }
 
 .mobile-nav {
