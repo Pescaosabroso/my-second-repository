@@ -11,7 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="style">
 </head>
 <body>
+    <nav class="mobile-nav">
+        <a href="" class="mobile-hamburger-menu"></a>
+        <a href="" class="nav-login"></a>
+    </nav>
     <main class="main">
+        <nav class="desktop-nav">
+            <a href="" class="nav-search"></a>
+            <a href="" class="nav-login"></a>
+        </nav>
         <section class="pokedex">
             <div class="query-square">
                 <section class="content-block">
@@ -31,7 +39,7 @@
                             <div class="tier" id="tier"></div>
                         </div>
                         <div class="notch">
-                            <label class="ps" id="ps"></label>
+                            <label class="ps" id="ps">HP</label>
                             <label class="ps_num" id="ps_num"></label>
                             <div id="info"></div>
                         </div>
@@ -40,39 +48,39 @@
                 <section class="ability">
                     <section id="abilities" class="ability-1" >
                         <div id="ability-a" class="ability-header"></div>
-                        <div >
-                            <span id="ab-img"></span>                
+                        <div >            
                             <label class="skillname-1" id="skillname-1"></label>
                             <span class="skilldesc2" id="damage1"></span>
-                            <div class="skilldesc1" id="skilldesc1">
+                            <p class="skilldesc1" id="skilldesc1">
                                 <!-- <label>Search your deck for a <img class="text-icon" src="public/img/GRASS-b-icon.png" alt="grass-type-energy"> Energy card and attach it to 1 of your Pokémon. Then, shuffle your deck.</label> -->
-                            </div>
+                            </p>
                         </div>
                         <div id="ability-b" class="ability-header"></div>
                         <div>
-                            <span id="ab-img2"></span>
                             <label class="skillname-2" id="skillname-2"></label>
                             <span class="skilldesc2" id="damage2"></span>
-                            <div class="skilldesc1" id="skilldesc2"></div>
+                            <p class="skilldesc1" id="skilldesc2"></p>
                         </div>
                     </section>
-                    <section id="attacks">
-                        <div id="attack-a" class="attack-header"></div>                    
+                    <section>
+                        <div id="rules" class="skilldesc1"></div>
+                        <div id="rules2" class="skilldesc1"></div>
+                    </section>
+                    <section id="attacks">                    
                         <div class="ability-1">
                             <span id="at-img"></span>                         
                             <label class="skillname-1" id="skillname-3"></label>                    
                             <span class="skilldesc2" id="damage3"></span>                      
-                            <div class="skilldesc1" id="skilldesc3"></div>                         
+                            <p class="skilldesc1" id="skilldesc3"></p>                         
                         </div>
-                        <div id="attack-b" class="attack-header"></div>
                         <div >
                             <span id="at-img2"></span>  
                             <label class="skillname-2" id="skillname-4"></label>
                             <span class="skilldesc2" id="damage4"></span>
-                            <div class="skilldesc1" id="skilldesc4"></div>
+                            <p class="skilldesc1" id="skilldesc4"></p>
                         </div>
                     </section>
-                </section>          
+                </section>         
                 <section class="stats-section" id="stats">
                     <div class="weakness">
                         <label>Weakness</label>
@@ -131,11 +139,11 @@
                 <div class="chekboxes">
                     <label for="">I'd like to receive emails about:</label>                   
                     <div class="checklabel">
-                        <input type="checkbox">
+                        <input type="checkbox" checked>
                         <label>Apocrydex video games, apps, and more</label>
                     </div>
                     <div class="checklabel">
-                        <input type="checkbox">
+                        <input type="checkbox" checked>
                         <label for="">The Monastery (our official online shop)</label>
                     </div>
                     <div class="checklabel">

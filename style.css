@@ -3,6 +3,15 @@ body {
     margin: 0px;
 }
 
+.mobile-nav {
+    background-color: black;
+    color: white;
+}
+
+.desktop-nav {
+    background-color: yellow;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -146,7 +155,7 @@ body {
     color: white;
     font-weight: 400px;
     font-size: 35px;
-    padding: 10px 0px 10px 7px;
+    padding: 12px 0px 10px 10px;
 }
 
 .card-info {
@@ -209,8 +218,9 @@ body {
 }
 
 .energy-type {
-    width: 1em;
-    height: 1em;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    margin-right: 0.1em;
 }
 
 #info {
@@ -237,13 +247,9 @@ body {
     color: #E3350D;
 }
 
-/* .skillname-1 {
-    margin-left: 10px;
-} */
-
 .skilldesc1 {
     display: flex;
-    text-justify: auto;
+    text-align: left;
     margin-top: 10px;
     color: grey;
     font-family: "Roboto", sans-serif;
@@ -255,13 +261,6 @@ body {
 .text-icon {
     width: 1rem;
     height: 1rem;
-}
-
-.attack-header {
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: 500px;
-    color: #1b0de3;
 }
 
 .ability-2{
@@ -303,17 +302,21 @@ body {
 }
 
 .w-stats {
-    margin-bottom: 10px;
+    display: flex;
+    width: 5em;
+    
 }
 
 .weakness-num{
-    margin-left: 5px;
     color: rgb(45, 46, 46);
     font-size: 28px;
+    font-weight: 300;
+    margin-top: 10px;
 }
 
 #weakness {
     margin-top: 10px;
+    margin-right: 2px;
 }
 
 .resistance {
