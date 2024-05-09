@@ -3,9 +3,80 @@ body {
     margin: 0px;
 }
 
+.mobile-dropdown-menu {
+    background-color:  #fff;
+    color: #464646;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: -700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: left;
+    font-size: 2rem;
+    transition: .3s ease;
+}
+.mobile-dropdown-menu a {
+    color: #464646;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mobile-dropdown-menu a:visited {
+    color: #464646;
+}
+.mobile-dropdown-menu a:hover {
+    color: #6F86FF;
+}
+
+.mobile-dropdown-menu.active {
+    bottom: 700px;
+}
+
 .mobile-nav {
     background-color: black;
     color: white;
+}
+
+.hamburger-menu{
+    height: 50px;
+    width: 40px;
+    position: relative;
+}
+
+.hamburger-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #6F86FF;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* transition: .3s ease; */
+}
+.hamburger-menu:nth-child(1) {
+    top: 25%;
+}
+.hamburger-menu:nth-child(3) {
+    top: 75%;
+}
+.hamburger-menu.active span {
+    background-color: white;
+}
+.hamburger-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .desktop-nav {
@@ -913,4 +984,9 @@ body {
     .foot-wrapper {
         width: 30%;
     }
+}
+
+.hidden {         
+    display: none;
+    /* "Add to this class in emergency cases only"*/
 }

@@ -29,19 +29,21 @@ const skill4 = document.getElementById("skilldesc4");
 const stats = document.getElementById("stats");
 const weaknessEnergy = document.getElementById("weakness");
 const weaknessNum = document.getElementById("weakness-num");
-
 const resistanceEnergy = document.getElementById("resistance");
 const resistanceNum = document.getElementById("resistance-num");
-
 const retreatEnergy = document.getElementById("retreat");
 const footNoteTitle = document.getElementById("stats-link");
 const footNote = document.getElementById("fn-text");
 const footLogo = document.getElementById("promo");
 
-const replaceData = () => {
-fetch('https://api.pokemontcg.io/v2/cards/swsh2-167/')
-      .then(response => response.json())
-      .then(data => {
+window.onload = async () => {
+fetch('https://api.pokemontcg.io/v2/cards/sm3-71/')
+  .then(response => response.json())
+  .then(data => {
+    try {
+      if (!data || Object.keys(data).length === 0) {
+        return defaultData; // Replace with your default data
+      }  
       card.src = data.data.images.small;
       pokeName.textContent = data.data.name;
       pokemonType.textContent = data.data.supertype;
@@ -53,30 +55,28 @@ fetch('https://api.pokemontcg.io/v2/cards/swsh2-167/')
       } else {
         hitPointsTitle.style.display = 'none';
       }
-      // const energyType = data.data.types;
-      // energyType.forEach(item => {
-      //   const pokeType = document.createElement('img')
-      //   pokeType.src = `public/img/${item}.webp`
-      //   pokeType.alt = "Pokemon-Type"
-      //   pokeType.classList.add('energy-type')
-      //   pokemonEnergy.appendChild(pokeType)
-      // });
-      // buttonA.textContent = `Find ${data.data.name} in The Apocrydex`;
-      // buttonA.href = data.data.cardmarket.url;
-      // buttonC.textContent = `Find ${data.data.name} in The Apocrydex`;
-      // buttonC.href = data.data.cardmarket.url;
-      // abilityHeader1.textContent = data.data.abilities[0].type;
-      // skillName1.textContent = data.data.abilities[0].name;
-      // damage1.textContent = data.data.abilities[0].damage;
-      // skill1.textContent = data.data.abilities[0].text;
+      const energyType = data.data.types;
+      energyType.forEach(item => {
+        const pokeType = document.createElement('img')
+        pokeType.src = `public/img/${item}.webp`
+        pokeType.alt = "Pokemon-Type"
+        pokeType.classList.add('energy-type')
+        pokemonEnergy.appendChild(pokeType)
+      });
+      buttonA.textContent = `Find ${data.data.name} in The Apocrydex`;
+      buttonA.href = data.data.cardmarket.url;
+      buttonC.textContent = `Find ${data.data.name} in The Apocrydex`;
+      buttonC.href = data.data.cardmarket.url;
+      abilityHeader1.textContent = data.data.abilities[0].type;
+      skillName1.textContent = data.data.abilities[0].name;
+      damage1.textContent = data.data.abilities[0].damage;
+      skill1.textContent = data.data.abilities[0].text;
       // abilityHeader2.textContent = data.data.abilities[1].type;
       // skillName2.textContent = data.data.abilities[1].name;
       // damage2.textContent = data.data.abilities[1].damage;
       // skill2.textContent = data.data.abilities[1].text;
-
-      rules.textContent = data.data.rules[0];
-      rules2.textContent = data.data.rules[1];
-
+      // rules.textContent = data.data.rules[0];
+      // rules2.textContent = data.data.rules[1];
       const energyTypeAt1 = data.data.attacks[0].cost;
       energyTypeAt1.forEach(item => {
         const at1 = document.createElement('img')
@@ -99,6 +99,11 @@ fetch('https://api.pokemontcg.io/v2/cards/swsh2-167/')
       // skillName4.textContent = data.data.attacks[1].name;
       // damage4.textContent = data.data.attacks[1].damage;
       // skill4.textContent = data.data.attacks[1].text;
+      if (showHp) {
+        stats.style.display = 'flex';
+      } else {
+        stats.style.display = 'none';
+      }
       weaknessNum.textContent = data.data.weaknesses[0].value;
       const energyTypeW = data.data.weaknesses;
       energyTypeW.forEach(item => {
@@ -108,32 +113,20 @@ fetch('https://api.pokemontcg.io/v2/cards/swsh2-167/')
         weaK.classList.add('energy-type')
         weaknessEnergy.appendChild(weaK)
       });
-
-      
-
-      if (pokemonType2.includes("Basic")) {
-        stats.style.display = 'block';
-      } else {
-        stats.style.display = 'none';
-      }
-
-
-
-
-      resistanceNum.textContent = data.data.resistances[0].value;
-      const energyTypeResistance = data.data.resistances[0].type;
-      energyTypeResistance.forEach(item => {
-        const r = document.createElement('img')
-        r.src = `public/img/${item.type}.webp`
-        r.alt = "weakness-energy"
-        r.classList.add('energy-type')
-        resistanceEnergy.appendChild(r)
-      });
+      // resistanceNum.textContent = data.data.resistances[0].value;
+      // const energyTypeResistance = data.data.resistances;
+      // energyTypeResistance.forEach(item => {
+      //   const r = document.createElement('img')
+      //   r.src = `public/img/${item.type}.webp`
+      //   r.alt = "weakness-energy"
+      //   r.classList.add('energy-type')
+      //   resistanceEnergy.appendChild(r)
+      // });
       const energyTypeRetreat = data.data.retreatCost;
       energyTypeRetreat.forEach(item => {
         const rT = document.createElement('img')
         rT.src = `public/img/${item}.webp`
-        rT.alt = "weakness-energy"
+        rT.alt = "retreat-cost"
         rT.classList.add('energy-type')
         retreatEnergy.appendChild(rT)
       });
@@ -141,7 +134,11 @@ fetch('https://api.pokemontcg.io/v2/cards/swsh2-167/')
       footNoteTitle.href = "https://www.pokemon.com/us/pokemon-tcg/pokemon-cards/?swsh2=";
       footNote.textContent = data.data.rarity;
       footLogo.src = data.data.set.images.symbol;
-      })};
+      }
+    catch (error) {
+      console.error('API Error:', error.message);
+    return defaultData;
+    }
+    })};
 
-changer.addEventListener("click", replaceData);
-
+// changer.addEventListener("click", replaceData);
