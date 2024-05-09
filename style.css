@@ -3,39 +3,6 @@ body {
     margin: 0px;
 }
 
-.mobile-dropdown-menu {
-    background-color:  #fff;
-    color: #464646;
-    height: 100vh;
-    width: 100%;
-    max-width: 450px;
-    position: fixed;
-    top: -700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    justify-content: center;
-    text-align: left;
-    font-size: 2rem;
-    transition: .3s ease;
-}
-.mobile-dropdown-menu a {
-    color: #464646;
-    text-decoration: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.mobile-dropdown-menu a:visited {
-    color: #464646;
-}
-.mobile-dropdown-menu a:hover {
-    color: #6F86FF;
-}
-
-.mobile-dropdown-menu.active {
-    top: 0px;
-}
-
 .mobile-nav {
     background-color: black;
     color: white;
@@ -56,7 +23,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    /* transition: .3s ease; */
+    transition: .3s ease;
 }
 .hamburger-menu:nth-child(1) {
     top: 25%;
@@ -77,6 +44,90 @@ body {
 .hamburger-menu.active span:nth-child(3) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.mobile-dropdown-menu {
+    background-color: #616161;
+    height: 70%;
+    width: 100%;
+    max-height: 600px;
+    position: fixed;
+    top: -1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: left;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+.mobile-dropdown-menu.active {
+    top: 152px;
+}
+
+.mobile-dropdown-menu ul {
+    padding: 0px;
+    width: 100%;
+}
+
+.mobile-dropdown-menu div {
+    margin-left: 15px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.mobile-dropdown-menu li {
+    list-style: none;
+}
+
+.mobile-dropdown-menu a {
+    color: #464646;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.mobile-dropdown-menu a:visited {
+    color: #464646;
+}
+.mobile-dropdown-menu a:hover {
+    color: #6F86FF;
+}
+
+.mobile-dropdown-menu img {
+    width: 25px;
+    height: 25px;
+}
+
+.nav-home {
+    background-color: #919191;
+}
+
+.nav-dex {
+    background-color: #E3350D;
+}
+
+.nav-game {
+    background-color: #ee6b2f;
+}
+
+.nav-tgc {
+    background-color: #e6bc2f;
+}
+
+.nav-events {
+}
+
+.nav-news {
+}
+
+.search-wrapper {
+    width: 100%;
+}
+
+.nav-search{
+    width: 80%;
 }
 
 .desktop-nav {
