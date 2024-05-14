@@ -11,32 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="style">
 </head>
 <body>
-
-    <nav class="mobile-nav">
-
+    <!--"hard-mode" navbar-->
+    <!-- <nav class="mobile-nav">  
         <div class="hamburger-menu">
-
-            <span></span>
-            <span></span>
-            <span></span>
-
+            <img src="public/img/menu-icon.svg" alt="ham" class="menu-icon">
         </div>
-
         <section class="emptynav"></section>
-
         <section class="nav-login" id="login">
             <a href="">
                 <img src="https://assets.pokemon.com/static2/_ui/img/chrome/profile-navigation/profile-nav-signup.png" alt="login">
                 <div for="">Log in</div>
             </a>
         </section>
-
-    
-
-
         <div class="mobile-dropdown-menu">
-
-
             <ul>
                 <li class="nav-home">
                     <div>
@@ -80,25 +67,34 @@
                         <a href="">News</a>
                     </div>
                 </li>
-
                 <li class="search-wrapper">
                     <form action="search">
                         <img src="public/img/Dark.webp" alt="search-icon" class="search-icon">
                         <input type="search" class="nav-search" id="nav-search">
                     </form>
                 </li>
-
-            
             </ul>
+        </div>
+    </nav> -->
 
-
-
+    <!--simple navbar-->
+    <nav class="simple-nav">
+        <div class="nav-banner">
+            <a href=""><img src="public/img/mar-ditto.png" alt="mascot">The Apocrydex</a>
+        </div>
+        <div class="ham-menu">
+            <img src="public/img/menu-icon.svg" alt="ham-menu">
+        </div>
+        <div class="dropdown-menu">
+            <ul>
+                <li>Advanced</li>
+                <li>Syntax</li>
+                <li>Set</li>
+                <li>Donate</li>
+                <li><img src="public/img/lightmode-icon.png" alt="illumination"></li>
+            </ul>
         </div>
     </nav>
-
-
-
-
     <main class="main">
         <!-- <nav class="desktop-nav">
             <a href="" class="nav-search"></a>

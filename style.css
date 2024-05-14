@@ -3,14 +3,33 @@ body {
     margin: 0px;
 }
 
-.mobile-nav {
+/* Complex navbar */
+
+/* .mobile-nav {
     display: flex;
     background-color: #1e1e1e;;
     color: white;
     position: relative;
 }
 
+.menu-icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    fill: #a4a4a4;
+}
+
+#my-svg path {
+  fill: #000;
+}
+
+#my-svg:hover path { 
+    fill: #f00;
+}
+
 .hamburger-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 15%;
     padding: 5px;
     position: relative;
@@ -30,25 +49,14 @@ body {
     transform: translate(-50%, -50%);
     transition: .3s ease;
 }
-.hamburger-menu:nth-child(1) {
-    top: 25%;
-}
-.hamburger-menu:nth-child(3) {
-    top: 75%;
-}
+
 .hamburger-menu.active span {
     background-color: white;
 }
+
 .hamburger-menu.active span:nth-child(1) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-}
-.hamburger-menu.active span:nth-child(2) {
-    opacity: 0;
-}
-.hamburger-menu.active span:nth-child(3) {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .mobile-dropdown-menu {
@@ -170,7 +178,10 @@ body {
 .emptynav {
     border-bottom: 0.18rem solid black;
     width: 70%;
+    background: #1f1f1f;
+    background: radial-gradient(circle, rgba(175, 175, 175, 0.7231267507002801) -3%, rgba(0, 0, 0, 1) 108%, rgba(0, 0, 0, 0.9136029411764706) 500%);
 }
+
 
 .nav-login {
     width: 15%;
@@ -196,7 +207,140 @@ body {
 
 .desktop-nav {
     background-color: yellow;
+} */
+
+/* Simple navbar */
+.simple-nav {
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    color: black;
+    display: flex;
+    border-bottom: 2px solid;
+    border-bottom-style: outset;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+
+.nav-banner {
+    width: 80%;
+    padding: 5px;
+}
+
+.nav-banner a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+.nav-banner img {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0rem 1rem;   
+}
+
+.ham-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.ham-menu img {
+    width: 1.6rem;
+    height: 1.3rem;
+}
+
+/* .hamburger-menu span {
+    height: 5px;
+    width: 65%;
+    background-color: #6F86FF;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.hamburger-menu.active span {
+    background-color: white;
+} */
+
+.dropdown-menu {
+    background-color: white;
+    height: 70%;
+    width: 100%;
+    max-height: 600px;
+    position: absolute;
+    /* top: -1000px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    text-align: left;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+/* .dropdown-menu.active {
+    top: 511%;;
+} */
+
+.dropdown-menu ul {
+    padding: 0px;
+    width: 100%;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu img {
+    width: 50px;
+    height: 50px;
+}
+
+.dropdown-menu a {
+    color: #464646;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.dropdown-menu a:visited {
+    color: #464646;
+}
+.dropdown-menu a:hover {
+    color: #6F86FF;
+}
+
+/* .mobile-dropdown-menu div {
+    display: flex;
+    align-items: center;
+    margin: 0rem 0rem 0rem 0.7rem;
+    background-color: #fff;
+    height: 3.7rem;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main {
     display: flex;
