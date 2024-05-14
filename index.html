@@ -79,21 +79,69 @@
 
     <!--simple navbar-->
     <nav class="simple-nav">
-        <div class="nav-banner">
-            <a href=""><img src="public/img/mar-ditto.png" alt="mascot">The Apocrydex</a>
-        </div>
-        <div class="ham-menu">
-            <img src="public/img/menu-icon.svg" alt="ham-menu">
-        </div>
-        <div class="dropdown-menu">
-            <ul>
-                <li>Advanced</li>
-                <li>Syntax</li>
-                <li>Set</li>
-                <li>Donate</li>
-                <li><img src="public/img/lightmode-icon.png" alt="illumination"></li>
-            </ul>
-        </div>
+        <section class="small-screen-nav">
+            <div class="nav-banner">
+                <a href=""><img src="public/img/mar-ditto.png" alt="mascot">The Apocrydex</a>
+            </div>
+            <div class="ham-menu">
+                <img src="public/img/menu-icon.svg" alt="ham-menu">
+            </div>
+            <div class="dropdown-menu">
+                <ul>
+                    <form action="search" class="searchform2">
+                        <img src="public/img/Searchglass-icon.svg" alt="search-icon">
+                        <input type="search" placeholder="Search for a card" class="searchbar2">
+                    </form>
+                    <li>
+                        <a href="https://pokemontcg.guru/advanced">Advanced</a>
+                    </li>
+                    <li>
+                        <a href="https://pokemontcg.guru/syntax">Syntax</a>
+                    </li>
+                    <li>
+                       <a href="https://pokemontcg.guru/sets">Sets</a>
+                    </li>
+                    <li>
+                        <a href="https://pokemontcg.guru/donate">Donate</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="public/img/moon-icon.svg" alt="illumination">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="large-screen-nav">
+            <section class="nav-1">
+                <div class="nav-banner">
+                    <a href=""><img src="public/img/mar-ditto.png" alt="mascot">The Apocrydex</a>
+                </div>
+                <form action="search" class="searchform2">
+                    <img src="public/img/Searchglass-icon.svg" alt="search-icon">
+                    <input type="search" placeholder="Search for a card" class="searchbar2">
+                </form>
+            </section>
+            <section class="nav-buttons">
+                <div>
+                    <a href="https://pokemontcg.guru/advanced">Advanced</a>
+                </div>
+                <div>
+                    <a href="https://pokemontcg.guru/syntax">Syntax</a>
+                </div>
+                <div>
+                    <a href="https://pokemontcg.guru/sets">Sets</a>
+                </div>
+                <div>
+                    <a href="https://pokemontcg.guru/donate">Donate</a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="public/img/moon-icon.svg" alt="illumination">
+                    </a>
+                </div>
+            </section>
+        </section>        
     </nav>
     <main class="main">
         <!-- <nav class="desktop-nav">

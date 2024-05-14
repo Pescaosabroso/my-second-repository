@@ -15,3 +15,8 @@ hamMenu.addEventListener("click", () => {
   hamMenu.classList.toggle("active");
   dropDownMenu.classList.toggle("active");
 });
+
+// const lightMode = document.querySelector ("");
+// const darkMode = document.querySelector ("");
+
+// dar
