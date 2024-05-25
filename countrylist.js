@@ -21,3 +21,5 @@ countries.forEach(country => {
 }
 
 selectElement.addEventListener("load", displayCountries);
+
+//redundancy tests
