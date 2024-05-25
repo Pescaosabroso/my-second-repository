@@ -216,10 +216,11 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     font-size: medium;
-    color: black;
-    border-bottom: 2px solid;
-    border-bottom-style: outset;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 8px #e0e0e0;
+}
+
+.simple-nav.dark-mode {
+    background-color: #1a202c;
 }
 
 .small-screen-nav{
@@ -240,13 +241,17 @@ body {
     font-weight: 800;
 }
 
+.nav-banner a.dark-mode {
+    color: #ffff;
+}
+
 .nav-banner img {
     width: 3.5rem;
     height: 3.5rem;
     margin: 0rem 1rem;   
 }
 
-.ham-menu{
+.ham-menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,10 +260,14 @@ body {
     position: relative;
 }
 
+.ham-menu.dark-mode {
+    background-color: #1a202c;
+}
+
 .ham-menu img {
     width: 1.6rem;
     height: 1.3rem;
-    transition: .3s ease;
+    transition: 03s ease;
 }
 
 .dropdown-menu {
@@ -277,6 +286,11 @@ body {
     font-size: 3rem;
     transition: .3s ease;
 }
+
+.dropdown-menu.dark-mode {
+    background-color: #1a202c;
+}
+
 .dropdown-menu.active {
     top: 11%;
 }
@@ -297,6 +311,12 @@ body {
     padding-left: 3.6rem;
     width: 100%;
     height: 2.5rem;
+}
+
+.searchbar2.dark-mode {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    border: 1px solid #21261d;;
 }
 
 .dropdown-menu ul {
@@ -328,13 +348,27 @@ body {
     font-weight: 600;
 }
 
-.dropdown-menu a:visited {
+.dropdown-menu a.dark-mode {
+    color: #c9d1d9;
+}
+
+.dropdown-menu a:visited{
     color: #464646;
 }
 
 .dropdown-menu a:hover {
     color: #6F86FF;
 }
+
+.dropdown-menu a:visited.dark-mode {
+    color: #c9d1d9;
+}
+
+.dropdown-menu a:hover.dark-mode {
+    color: #c9d1d9;
+    background-color: #0d1117;
+}
+
 
 .nav-1 {
     width: 50%;
@@ -345,12 +379,16 @@ body {
     width: 40%;
 }
 
-.nav-buttons a {
+.nav-buttons {
     color: #464646;
     text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
+}
+
+.nav-buttons.dark-mode {
+    color: #c9d1d9;
 }
 
 .nav-buttons a:visited {
@@ -359,6 +397,15 @@ body {
 
 .nav-buttons a:hover {
     color: #6F86FF;
+}
+
+.nav-buttons a:visited.dark-mode {
+    color: #c9d1d9;
+}
+
+.nav-buttons a:hover.dark-mode {
+    color: #c9d1d9;
+    background-color: #0d1117;
 }
 
 .nav-buttons div {
@@ -374,6 +421,17 @@ body {
     display: none;
 }
 
+@media screen and (min-width: 425px) {
+    
+    .searchform2 img {
+        left: 3%;
+    }
+
+    .searchbar2 {
+        padding-left: 3.2rem;
+    }
+}
+
 @media screen and (min-width: 720px) {
     
     .nav-banner {
@@ -387,6 +445,14 @@ body {
     .dropdown-menu {
         top: -63rem;
         max-height: 50%;
+    }
+
+    .searchform2 img {
+        left: 2%;
+    }
+
+    .searchbar2 {
+        padding-left: 3.6rem;
     }
 
     .dropdown-menu ul {
@@ -434,6 +500,7 @@ body {
     .nav-buttons {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     .searchform2 {
@@ -441,7 +508,7 @@ body {
     }
 
     .searchform2 img {
-        height: 1.2rem;
+        height: 1rem;
         position: absolute;
         top: 17%;
         left: 4%;
@@ -491,9 +558,21 @@ body {
 
 }
 
-@media screen and (min-width: 720px) {}
+@media screen and (min-width: 2560px) {
+    .large-screen-nav {
+        justify-content: center;
+    }
 
-@media screen and (min-width: 720px) {}
+    .nav-1 {
+        width: 20%;
+    }
+
+    .nav-buttons {
+        width: 15%;
+    }
+
+}
+
 
 
 
@@ -518,12 +597,16 @@ body {
     background-color: seagreen;
   }    
 
-.pokedex{
+.pokedex {
     display: flex;
     flex-direction: column;
     width: 100%;
     background-color: white;
     padding-bottom: 2em;
+}
+
+.pokedex.dark-mode {
+    background-color: #0d1117;
 }
 
 @media screen and (min-width: 768px) {
@@ -951,10 +1034,10 @@ body {
 
   @media screen and (min-width: 768px) {
     .stylus2 {
-        width: 84%;
+        width: 85.1%;
     }
     .stylus2::after {
-        right: 8%; 
+        right: 7.4%; 
     }
 }
 
@@ -969,30 +1052,30 @@ body {
 
 @media screen and (min-width: 1358px) {
     .stylus2 {
-        width: 61%;
+        width: 59.7%;
     }
 
-    .stylus2 ::after {
-        right: 20%;
+    .stylus2::after {
+        right: 20.2%;
     }
 
 }
 
 @media screen and (min-width: 1440px) {
     .stylus2 {
-        width: 55%;
+        width: 56.2%;
     }
     .stylus2::after {
-        right: 22%; 
+        right: 21.8%; 
     }
 }
 
 @media screen and (min-width: 2560px) {
     .stylus2 {
-        width: 31%;
+        width: 31.9%;
     }
     .stylus2::after {
-        right: 34.2%; 
+        right: 34.1%; 
     }
 }
 
