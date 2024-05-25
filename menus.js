@@ -68,22 +68,22 @@ toggleDarkMode.addEventListener('click', () => {
 });
 
 
-// toggleDarkMode2.addEventListener('click', () => {
-//   simpleNav.classList.toggle('dark-mode');
-//   bannerText.classList.toggle('dark-mode');
-//   if (simpleNav.classList.contains('dark-mode')) {
-//     light.src = sunIcon;
-//   } else {
-//     light.src = moonIcon;
-//   }
-//   hamMenu.classList.toggle('dark-mode');
-//   dropDownMenu.classList.toggle('dark-mode');
-//   searchBar.classList.toggle('dark-mode');
-//   linksA.classList.toggle('dark-mode');
-//   linksAv.classList.toggle('dark-mode');
-//   linksAh.classList.toggle('dark-mode');
-//   navButtons.classList.toggle('dark-mode');
-//   navButtonsV.classList.toggle('dark-mode');
-//   navButtonsH.classList.toggle('dark-mode');
-//   pokedex.classList.toggle('dark-mode');
-// });
+toggleDarkMode2.addEventListener('click', () => {
+  simpleNav.classList.toggle('dark-mode');
+  bannerText.classList.toggle('dark-mode');
+  if (simpleNav.classList.contains('dark-mode')) {
+    light.src = sunIcon;
+  } else {
+    light.src = moonIcon;
+  }
+  hamMenu.classList.toggle('dark-mode');
+  dropDownMenu.classList.toggle('dark-mode');
+  searchBar.classList.toggle('dark-mode');
+  linksA.classList.toggle('dark-mode');
+  linksAv.classList.toggle('dark-mode');
+  linksAh.classList.toggle('dark-mode');
+  navButtons.classList.toggle('dark-mode');
+  navButtonsV.classList.toggle('dark-mode');
+  navButtonsH.classList.toggle('dark-mode');
+  pokedex.classList.toggle('dark-mode');
+});
