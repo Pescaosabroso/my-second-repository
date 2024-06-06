@@ -31,42 +31,14 @@ const sunIcon = 'public/img/sun-icon.svg';
 const  simpleNav= document.querySelector (".simple-nav");
 const  bannerText= document.querySelector (".nav-banner a");
 const  searchBar= document.querySelector (".searchbar2");
-const  linksA= document.querySelector (".dropdown-menu a");
-const  linksAv= document.querySelector (".dropdown-menu a:visited");
-const  linksAh= document.querySelector (".dropdown-menu a:hover");
-const  navButtons= document.querySelector (".nav-buttons");
-const  navButtonsV= document.querySelector (".nav-buttons a:visited");
-const  navButtonsH= document.querySelector (".nav-buttons a:hover");
-const  background= document.querySelector (".pokedex");
-
-
-
-
-
-
-  
-  
-
-// toggleDarkMode.addEventListener('click', () => {
-//   simpleNav.classList.toggle('dark-mode');
-//   bannerText.classList.toggle('dark-mode');
-//   if (simpleNav.classList.contains('dark-mode')) {
-//     light.src = sunIcon;
-//   } else {
-//     light.src = moonIcon;
-//   }
-//   hamMenu.classList.toggle('dark-mode');
-//   dropDownMenu.classList.toggle('dark-mode');
-//   searchBar.classList.toggle('dark-mode');
-//   linksA.classList.toggle('dark-mode');
-//   linksAv.classList.toggle('dark-mode');
-//   linksAh.classList.toggle('dark-mode');
-//   navButtons.classList.toggle('dark-mode');
-//   navButtonsV.classList.toggle('dark-mode');
-//   navButtonsH.classList.toggle('dark-mode');
-//   pokedex.classList.toggle('dark-mode');
-// });
-
+const  linksA= document.querySelectorAll (".dropdown-menu a");
+const  linksAv= document.querySelectorAll (".dropdown-menu a:visited");
+const  linksAh= document.querySelectorAll (".dropdown-menu a:hover");
+const  navButtons= document.querySelectorAll (".nav-buttons");
+const  navButtonsV= document.querySelectorAll (".nav-buttons a:visited");
+const  navButtonsH= document.querySelectorAll (".nav-buttons a:hover");
+const  pokedex= document.querySelectorAll (".pokedex");
+const  cardName= document.querySelectorAll (".name");
 
 toggleDarkMode.addEventListener('click', () => {
   const elementsToToggle = [
@@ -81,6 +53,8 @@ toggleDarkMode.addEventListener('click', () => {
     navButtons,
     navButtonsV,
     navButtonsH,
+    pokedex,
+    cardName
   ];
 
   elementsToToggle.forEach(element => element.classList.toggle('dark-mode'));

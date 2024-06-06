@@ -640,7 +640,7 @@ body {
 }    
 
 .pokedex.dark-mode {
-    background-color: #0d1117;
+    background-color: #1a202c;
 }
 
 .music-theme {
@@ -708,6 +708,7 @@ body {
     border-radius: 5px;
 }
 
+
 @media screen and (min-width: 1024px) {
     .buttons {
         display: flex;
@@ -752,6 +753,12 @@ body {
     font-weight: 400px;
     font-size: 35px;
     padding: 12px 0px 10px 10px;
+}
+
+.name.dark-mode {
+    color: #c9d1d9;
+    background-color: #0d1117;
+    border-color: #a4a4a4;
 }
 
 .card-info {
