@@ -621,10 +621,6 @@ body {
     padding-bottom: 2em;
 }
 
-.pokedex.dark-mode {
-    background-color: #0d1117;
-}
-
 @media screen and (min-width: 768px) {
     .pokedex {
         width: 80%;
@@ -642,6 +638,10 @@ body {
         gap: 5%;
     }
 }    
+
+.pokedex.dark-mode {
+    background-color: #0d1117;
+}
 
 .music-theme {
 }

@@ -81,7 +81,6 @@ toggleDarkMode.addEventListener('click', () => {
     navButtons,
     navButtonsV,
     navButtonsH,
-    background
   ];
 
   elementsToToggle.forEach(element => element.classList.toggle('dark-mode'));
@@ -89,6 +88,8 @@ toggleDarkMode.addEventListener('click', () => {
   light.src = simpleNav.classList.contains('dark-mode') ? sunIcon : moonIcon;
 });
 
+
+console.log(toggleDarkMode);
 // toggleDarkMode2.addEventListener('click', () => {
 //   simpleNav.classList.toggle('dark-mode');
 //   bannerText.classList.toggle('dark-mode');
