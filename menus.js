@@ -1,12 +1,3 @@
-// const hamMenu = document.querySelector(".hamburger-menu");
-
-// const dropDownMenu = document.querySelector(".mobile-dropdown-menu");
-
-// hamMenu.addEventListener("click", () => {
-//   hamMenu.classList.toggle("active");
-//   dropDownMenu.classList.toggle("active");
-// });
-
 const hamMenu = document.querySelector(".ham-menu");
 const dropDownMenu = document.querySelector(".dropdown-menu");
 const menuIcon = document.querySelector(".ham-menu img")
@@ -64,22 +55,4 @@ toggleDarkMode.addEventListener('click', () => {
 
 
 console.log(toggleDarkMode);
-// toggleDarkMode2.addEventListener('click', () => {
-//   simpleNav.classList.toggle('dark-mode');
-//   bannerText.classList.toggle('dark-mode');
-//   if (simpleNav.classList.contains('dark-mode')) {
-//     light.src = sunIcon;
-//   } else {
-//     light.src = moonIcon;
-//   }
-//   hamMenu.classList.toggle('dark-mode');
-//   dropDownMenu.classList.toggle('dark-mode');
-//   searchBar.classList.toggle('dark-mode');
-//   linksA.classList.toggle('dark-mode');
-//   linksAv.classList.toggle('dark-mode');
-//   linksAh.classList.toggle('dark-mode');
-//   navButtons.classList.toggle('dark-mode');
-//   navButtonsV.classList.toggle('dark-mode');
-//   navButtonsH.classList.toggle('dark-mode');
-//   pokedex.classList.toggle('dark-mode');
-// });
+
