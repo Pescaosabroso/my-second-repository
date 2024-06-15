@@ -9,19 +9,21 @@ hamMenu.addEventListener("click", () => {
   dropDownMenu.classList.toggle("active");
   if (dropDownMenu.classList.contains('active')) {
     menuIcon.src = xIcon;
+    menuIcon.style.transform = `rotate(45deg)`;
   } else {
     menuIcon.src = hamIcon;
+    menuIcon.style.transform = `rotate(0deg)`;
   }
 });
 
 const toggleDarkMode = document.querySelector(".illumination");
-const toggleDarkMode2 = document.querySelector(".illumination2");
+// const toggleDarkMode2 = document.querySelector(".illumination2");
 const light = document.querySelector(".illumination img");
 const moonIcon = 'public/img/moon2-icon.svg';
 const sunIcon = 'public/img/sun-icon.svg';
 const  simpleNav= document.querySelector (".simple-nav");
 const  bannerText= document.querySelector (".nav-banner a");
-const  searchBar= document.querySelector (".searchbar2");
+const  searchBar= document.querySelector (".search input");
 const  linksA= document.querySelectorAll (".dropdown-menu a");
 const  linksAv= document.querySelectorAll (".dropdown-menu a:visited");
 const  linksAh= document.querySelectorAll (".dropdown-menu a:hover");
@@ -39,18 +41,18 @@ toggleDarkMode.addEventListener('click', () => {
     dropDownMenu,
     searchBar,
     linksA,
-    linksAv,
-    linksAh,
-    navButtons,
-    navButtonsV,
-    navButtonsH,
-    pokedex,
-    cardName
+  //   linksAv,
+  //   linksAh,
+  //   navButtons,
+  //   navButtonsV,
+  //   navButtonsH,
+  //   pokedex,
+  //   cardName
   ];
 
   elementsToToggle.forEach(element => element.classList.toggle('dark-mode'));
 
-  light.src = simpleNav.classList.contains('dark-mode') ? sunIcon : moonIcon;
+  light.src = simpleNav.classList.contains('dark-mode') ? moonIcon : sunIcon;
 });
 
 
