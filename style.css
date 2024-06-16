@@ -124,6 +124,8 @@ body {
 
 .dropdown-menu li {
     padding: 0.4rem;
+    display: flex;
+    align-items: center;
 }
 
 .dropdown-menu a {
@@ -138,6 +140,8 @@ body {
 }
 
 .search {
+    display: flex;
+    align-items: center;
     width: 100%;
     position: relative;
     padding: 0.4rem 0rem;
@@ -170,7 +174,9 @@ body {
     color: white;
 }
 
-.illumination {}
+.illumination {
+    display: flex;
+}
 
 .illumination img {
     width: 1.4rem;
