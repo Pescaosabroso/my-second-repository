@@ -30,7 +30,6 @@ const pokedex = document.querySelector(".pokedex");
 const backgroundColor = document.querySelector(".main");
 const cardName = document.querySelector(".name");
 const type = document.querySelector(".type");
-const tier = document.querySelectorAll(".tier");
 const notch = document.querySelector(".notch");
 const abilityHeader = document.querySelector(".ability-header");
 const skillName = document.querySelectorAll(".skillname-1");
@@ -40,12 +39,6 @@ const skillDescB = document.querySelectorAll(".skilldesc2");
 const statsSection = document.querySelector(".stats-section");
 const statsNumbers = document.querySelectorAll(".weakness-num");
 const statsFooter = document.querySelector(".stats-footer");
-// const stylus1 = document.querySelector(".stylus");
-// const stylus2 = document.querySelector(".stylus2");
-// const stylus2B = document.querySelector(".stylus2::before");
-// const stylus2A = document.querySelector(".stylus2::after");
-
-
 
 const mapDarkMode = ( Array ) => {
   Array.map(element => {
@@ -56,7 +49,6 @@ const mapDarkMode = ( Array ) => {
 toggleDarkMode.addEventListener("click", () => {
   const linksArray = Array.from(linksA);
   const hoverArray = Array.from(linksAh);
-  const tierArray = Array.from(tier);
   const skillNameArray1 = Array.from(skillName);
   const skillNameArray2 = Array.from(skillNameB);
   const skillDescArray1 = Array.from(skillDescA);
@@ -76,18 +68,13 @@ toggleDarkMode.addEventListener("click", () => {
     notch,
     abilityHeader,
     statsSection,
-    statsFooter,
-    // stylus1,
-    // stylus2,
-    // stylus2B,
-    // stylus2A
+    statsFooter
   ];
  
   elementsToToggle.forEach(element => element.classList.toggle("dark-mode"));
 
   mapDarkMode(linksArray);
   mapDarkMode(hoverArray);
-  mapDarkMode(tierArray);
   mapDarkMode(skillNameArray1);
   mapDarkMode(skillNameArray2);
   mapDarkMode(skillDescArray1);

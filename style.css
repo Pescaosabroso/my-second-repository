@@ -320,8 +320,8 @@ body {
     background-color: #1a202c;
 }
 
-.music-theme {
-}
+/* .music-theme {
+} */
 
 .query-square {
     display: flex;
@@ -439,6 +439,7 @@ body {
 
 .name.dark-mode {
     background-color: #475569;
+    border-color: #475569;
 }
 
 .card-info {
@@ -454,8 +455,8 @@ body {
 }
 
 .type.dark-mode {
-    color: #ffffff;
-    background-color: #0d1117;
+    background-color: #6b7280;
+    border-color: #6b7280;
 }
 
 .tier {
@@ -467,10 +468,6 @@ body {
     padding: 15px 0px 3px 10px;
     font-family: "flexo-demi" , Arial, Helvetica, sans-serif;   
 } 
-
-.tier.dark-mode {
-    color: #fff;
-}
 
 #tier {
     display: flex;
@@ -498,8 +495,9 @@ body {
 }
 
 .notch.dark-mode {
-    color: #ffffff;
-    background-color: #0d1117;
+    color: #000000;
+    background-color: #6b7280;
+    border-color: #6b7280;
 }
 
 .ps{
@@ -619,8 +617,8 @@ body {
 }
 
 .stats-section.dark-mode {
-    color: #fff;
-    background-color: #0d1117;
+    color: #1a1919;
+    background-color: #6b7280;
 }
 
 .weakness {
@@ -642,7 +640,7 @@ body {
 }
 
 .weakness-num.dark-mode {
-    color: #c9d1d9;
+    color: #000;
 }
 
 #weakness {
@@ -681,8 +679,12 @@ body {
 }
 
 .stats-footer.dark-mode {
-    color: #fff;
-    background-color: #0d1117;
+    color: #000;
+    background-color: #6b7280;
+}
+
+.stats-footer a.dark-mode {
+    color: #6e92da;
 }
 
 .footnote {
