@@ -202,16 +202,19 @@ body {
     background-color: #e0e0e0;
 }
 
-.dropdown-menu a {
+.dropdown-menu li:hover.dark-mode {
+    background-color: #161b22;
+}
+
+.big-screen-container li a {
     text-decoration: none;
-    color: rgb(7, 7, 7);
+    color: #000000;
     font-size: 1.2rem;
     font-weight: 400;
 }
 
-.dropdown-menu.dark-mode {
-    text-decoration: none;
-    color: rgb(255, 251, 251);
+.big-screen-container li a.dark-mode {
+    color: #fff;
 }
 
 .search {
@@ -274,18 +277,6 @@ body {
     height: 1.4rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .main {
     display: flex;
     flex-direction: column;
@@ -294,6 +285,10 @@ body {
     width: 100%;
     background-color: seagreen;
   }    
+
+  .main.dark-mode {
+    background-color: #161b22;
+  }
 
 .pokedex {
     display: flex;
@@ -390,6 +385,11 @@ body {
     border-radius: 5px;
 }
 
+.buttons a.dark-mode {
+    background-color: #cc5d45;
+    color: #fff;
+}
+
 
 @media screen and (min-width: 1024px) {
     .buttons {
@@ -438,9 +438,7 @@ body {
 }
 
 .name.dark-mode {
-    color: #c9d1d9;
-    background-color: #0d1117;
-    border-color: #a4a4a4;
+    background-color: #475569;
 }
 
 .card-info {
@@ -455,6 +453,11 @@ body {
     background-color: whitesmoke;
 }
 
+.type.dark-mode {
+    color: #ffffff;
+    background-color: #0d1117;
+}
+
 .tier {
     text-overflow: ellipsis;
     height: 1.8rem;
@@ -464,6 +467,10 @@ body {
     padding: 15px 0px 3px 10px;
     font-family: "flexo-demi" , Arial, Helvetica, sans-serif;   
 } 
+
+.tier.dark-mode {
+    color: #fff;
+}
 
 #tier {
     display: flex;
@@ -488,6 +495,11 @@ body {
     font-size: 2rem;
     padding-right: 7px;
     gap:0px;
+}
+
+.notch.dark-mode {
+    color: #ffffff;
+    background-color: #0d1117;
 }
 
 .ps{
@@ -532,6 +544,10 @@ body {
     color: #E3350D;
 }
 
+.ability-header.dark-mode {
+    color: #cc5d45;
+}
+
 .skilldesc1 {
     display: flex;
     text-align: left;
@@ -541,6 +557,10 @@ body {
     font-weight: 300;
     font-style: smooth;
     font-size: 15px;
+}
+
+.skilldesc1.dark-mode {
+    color: #fff;
 }
 
 .text-icon {
@@ -564,9 +584,26 @@ body {
     font-size: 20px;
 }
 
+.skilldesc2.dark-mode {
+    color: #c9d1d9;
+}
+
+.skillname-1 {
+    color: black;
+}
+
+.skillname-1.dark-mode {
+    color: #c9d1d9;
+}
+
 .skillname-2 {
     margin: 0px 0px 0px 10px;
     padding-top: 15px;
+    color: black;
+}
+
+.skillname-2.dark-mode {
+    color: #c9d1d9;
 }
 
 .stats-section {
@@ -581,6 +618,11 @@ body {
     font-weight: 600px;
 }
 
+.stats-section.dark-mode {
+    color: #fff;
+    background-color: #0d1117;
+}
+
 .weakness {
     display: flex;
     flex-direction: column;
@@ -592,11 +634,15 @@ body {
     
 }
 
-.weakness-num{
+.weakness-num {
     color: rgb(45, 46, 46);
     font-size: 28px;
     font-weight: 300;
     margin-top: 10px;
+}
+
+.weakness-num.dark-mode {
+    color: #c9d1d9;
 }
 
 #weakness {
@@ -627,6 +673,16 @@ body {
     background-color: whitesmoke;
     font-size: 15px;
     font-weight: 600px;
+}
+
+.stats-footer a {
+    color: blue;
+    text-decoration: none;
+}
+
+.stats-footer.dark-mode {
+    color: #fff;
+    background-color: #0d1117;
 }
 
 .footnote {
@@ -669,6 +725,11 @@ body {
     text-align: center;
 }
 
+.buttons2 a.dark-mode {
+    background-color: #cc5d45;
+    color: #fff;
+}
+
 #apiButton {
     display: flex;
     justify-content: center;
@@ -708,6 +769,10 @@ body {
     border-top-color: lightgray;
 }
 
+.stylus.dark-mode {
+    border-top-color: #161b22;
+}
+
 .stylus2 {
     background-color: white;
     width: 85.49%;
@@ -715,6 +780,10 @@ body {
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
 } 
+
+.stylus2.dark-mode {
+    background-color: #1a202c;
+}
 
 .stylus2::before {
     content: '';
@@ -782,6 +851,14 @@ body {
     .stylus2::after {
         right: 34.1%; 
     }
+}
+
+.stylus2::before.dark-mode {
+    background-color: #1a202c;
+}
+
+.stylus2::after.dark-mode {
+    background-color: #1a202c;
 }
 
 .footer {
