@@ -24,7 +24,7 @@ const sunIcon = 'public/img/sun-icon.svg';
 const  simpleNav= document.querySelector (".simple-nav");
 const  bannerText= document.querySelector (".nav-banner a");
 const  searchBar= document.querySelector (".search input");
-const  linksA= document.querySelectorAll (".dropdown-menu a");
+const  linksA= document.querySelector (".dropdown-menu a");
 const  linksAv= document.querySelectorAll (".dropdown-menu a:visited");
 const  linksAh= document.querySelectorAll (".dropdown-menu a:hover");
 const  navButtons= document.querySelectorAll (".nav-buttons");
@@ -41,13 +41,13 @@ toggleDarkMode.addEventListener('click', () => {
     dropDownMenu,
     searchBar,
     linksA,
-  //   linksAv,
-  //   linksAh,
-  //   navButtons,
-  //   navButtonsV,
-  //   navButtonsH,
-  //   pokedex,
-  //   cardName
+    // linksAh,
+  //linksAv,
+  //navButtons,
+  //navButtonsV,
+  //navButtonsH,
+  //pokedex,
+  //cardName
   ];
 
   elementsToToggle.forEach(element => element.classList.toggle('dark-mode'));
