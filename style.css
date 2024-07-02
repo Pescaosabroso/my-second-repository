@@ -277,6 +277,10 @@ body {
     height: 1.4rem;
 }
 
+.illumination img.dark-mode {
+    filter: brightness(0) invert(1);
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -784,7 +788,7 @@ body {
 } 
 
 .stylus2.dark-mode {
-    background-color: #1a202c;
+    background-color: #6b7280;
 }
 
 .stylus2::before {
@@ -792,7 +796,7 @@ body {
     position: absolute;
     width: 2rem;
     height: 0.7rem;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     transform: skewX(45deg);
     border-bottom-left-radius: 2px;
   }
@@ -806,6 +810,10 @@ body {
     background-color: rgb(255, 255, 255);
     transform: skewX(-45deg);
     border-bottom-right-radius: 2px;
+  }
+
+  .stylus2::after.dark-mode {
+    background-color:  #6b7280;
   }
 
   @media screen and (min-width: 768px) {

@@ -39,6 +39,8 @@ const skillDescB = document.querySelectorAll(".skilldesc2");
 const statsSection = document.querySelector(".stats-section");
 const statsNumbers = document.querySelectorAll(".weakness-num");
 const statsFooter = document.querySelector(".stats-footer");
+const stylus = document.querySelector(".stylus");
+const stylus2 = document.querySelector("stylus2");
 
 const mapDarkMode = ( Array ) => {
   Array.map(element => {
@@ -68,7 +70,10 @@ toggleDarkMode.addEventListener("click", () => {
     notch,
     abilityHeader,
     statsSection,
-    statsFooter
+    statsFooter,
+    light
+    // stylus,
+    // stylus2
   ];
  
   elementsToToggle.forEach(element => element.classList.toggle("dark-mode"));
@@ -84,4 +89,4 @@ toggleDarkMode.addEventListener("click", () => {
   light.src = simpleNav.classList.contains("dark-mode") ? moonIcon : sunIcon;
 });
 
-console.log(toggleDarkMode);
+// console.log(stylus,stylus2);
