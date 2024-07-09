@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The TCG-dex</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://db.onlinewebfonts.com/c/073a3b73a63a87e100f6bb8f003fc0d3?family=Flexo-Demi" rel="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="style">
+</head>
+<body>
+    <nav class="simple-nav">
+        <section class="small-screen-nav">
+            <div class="nav-banner">
+                <a href=""><img src="public/img/mar-ditto.png" alt="mascot">The TCG-dex</a>
+            </div>
+            <div class="ham-menu">
+                <img src="public/img/menu-icon.svg" alt="ham-menu">
+            </div>
+        </section>
+        <section class="dropdown-menu">
+            <ul>
+                <form action="search" class="search">
+                    <img src="public/img/Searchglass-icon.svg" alt="spyglass">
+                    <input type="search" placeholder="Search for a card">
+                </form>
+                <div class="big-screen-container">
+                    <li>
+                        <a href="https://pokemontcg.guru/advanced">Advanced</a>
+                    </li>
+                    <li>
+                        <a href="https://pokemontcg.guru/syntax">Syntax</a>
+                    </li>
+                    <li>
+                        <a href="https://pokemontcg.guru/sets">Sets</a>
+                    </li>
+                    <li>
+                        <a href="https://pokemontcg.guru/donate">Donate</a>
+                    </li>
+                    <li>
+                        <a class="illumination">
+                            <img src="public/img/sun-icon.svg" alt="illumination">
+                        </a>
+                    </li>
+                </div>    
+            </ul>
+        </section>
+    </nav>
+    <main class="main">
+        <section class="pokedex" id="pokedex">
+            <div class="query-square">
+                <section class="content-block">
+                    <img src="" alt="Card" id="card">
+                </section>
+                <section class="buttons">
+                    <a href="" id="button-a"></a>
+                    <a href="" class="smol" id="button-b">Explore More Cards</a>
+                </section>
+            </div>
+            <section class="content-table">
+                <section class="information">
+                    <div class="name" id="namex"></div>
+                    <span class="card-info">
+                        <div class="type">
+                            <div class="tier" id="subtier"></div>
+                            <div class="tier" id="tier"></div>
+                        </div>
+                        <div class="notch">
+                            <label class="ps" id="ps">HP</label>
+                            <label class="ps_num" id="ps_num"></label>
+                            <div id="info"></div>
+                        </div>
+                    </span>
+               </section>               
+                <section class="ability">
+                    <section id="abilities" class="ability-1" >
+                        <div id="ability-a" class="ability-header"></div>
+                        <div >
+                            <label class="skillname-1" id="skillname-1"></label>
+                            <span class="skilldesc2" id="damage1"></span>
+                            <p class="skilldesc1" id="skilldesc1">
+                                <!-- <label>Search your deck for a <img class="text-icon" src="public/img/GRASS-b-icon.png" alt="grass-type-energy"> Energy card and attach it to 1 of your Pokémon. Then, shuffle your deck.</label> -->
+                            </p>
+                        </div>
+                        <div id="ability-b" class="ability-header"></div>
+                        <div>
+                            <label class="skillname-2" id="skillname-2"></label>
+                            <span class="skilldesc2" id="damage2"></span>
+                            <p class="skilldesc1" id="skilldesc2"></p>
+                        </div>
+                    </section>
+                    <section>
+                        <div id="rules" class="skilldesc1"></div>
+                        <div id="rules2" class="skilldesc1"></div>
+                    </section>
+                    <section id="attacks">                    
+                        <div class="ability-1">
+                            <span id="at-img"></span>                         
+                            <label class="skillname-1" id="skillname-3"></label>                    
+                            <span class="skilldesc2" id="damage3"></span>                      
+                            <p class="skilldesc1" id="skilldesc3"></p>                         
+                        </div>
+                        <div >
+                            <span id="at-img2"></span>  
+                            <label class="skillname-2" id="skillname-4"></label>
+                            <span class="skilldesc2" id="damage4"></span>
+                            <p class="skilldesc1" id="skilldesc4"></p>
+                        </div>
+                    </section>
+                </section>         
+                <section class="stats-section" id="stats">
+                    <div class="weakness">
+                        <label>Weakness</label>
+                        <span class="w-stats">
+                            <div id="weakness"></div>
+                            <label class="weakness-num" id="weakness-num"></label>
+                        </span>
+                    </div>
+                    <div class="resistance">
+                        <label>Resistance</label>
+                        <div class="w-stats">
+                            <div id="resistance"></div>
+                            <label class="weakness-num" id="resistance-num"></label>
+                        </div>
+                    </div>
+                    <div class="retreat">
+                        <label>Retreat Cost</label>
+                        <span class="w-stats">
+                            <div id="retreat"></div>
+                        </span>   
+                    </div>
+                </section>
+                <section class="stats-footer">
+                    <a id="stats-link" href="https://www.youtube.com/watch?v=S0aXAm0jqd0">Place of Origin</a>
+                    <div class="footnote">
+                        <label class="fn-text" id="fn-text">🖢It is ill advised to put a rag on his head or this may happen!</label>
+                        <img class="promo" id="promo" src="https://assets.pokemon.com/assets/cms/img/tcg/expansion-symbols/_40x40/sm8-expansion-symbol.png" alt="Promo Card">
+                    </div>
+                </section>
+            </section>
+            <section class="buttons2">
+                <a href="" id="button-c"></a>
+                <a href="" id="button-d">Explore More Cards</a>
+            </section>
+        </section>
+        <section class="divider">
+            <div class="stylus">
+                <div class=" stylus2"></div>
+            </div> 
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="foot-openner"> 
+            <label class="subscribe">Sign up for moar Pokémon emails!</label>
+            <section class="fo-row">
+                <form class="form">
+                    <input type="email" class="email" placeholder="Email">
+                    <div class="form-envelope">                                                
+                        <select name="country" class="country" id="country">
+                            <option value="countries">Select your country</option>
+                        </select>
+                        <input type="date" class="date" id="date">
+                    </div>
+                </form>
+                <div class="chekboxes">
+                    <label for="">I'd like to receive emails about:</label>                   
+                    <div class="checklabel">
+                        <input type="checkbox" checked>
+                        <label>TCG-dex video games, apps, and more</label>
+                    </div>
+                    <div class="checklabel">
+                        <input type="checkbox" checked>
+                        <label for="">The Monastery (our official online shop)</label>
+                    </div>
+                    <div class="checklabel">
+                        <input type="checkbox">
+                        <label for="">I accept the TCG-dex <a href="https://www.pokemon.com/us/terms-of-use/">terms of use</a> and <a href="https://www.pokemon.com/us/privacy-notice/">Privacy Notice</a></label>
+                    </div>
+                </div>
+            </section>
+            <input type="submit" value="REGISTRARME" class="signup">
+        </section>        
+        <span class="foot-wrapper">
+            <section class="about">
+                <h2><img src="https://assets.pokemon.com/static2/_ui/img/footer/pokemon_company.png" alt="The Pokémon Company"></h2>
+                <a href="https://www.pokemon.com/us/pokemon-news/">News</a>
+                <a href="https://parents.pokemon.com/en-us/">Parent Guide</a>
+                <a href="https://www.pokemon.com/us/customer-service/">Customer Service</a>
+                <a href="https://corporate.pokemon.com/en-us/">About the Pokémon Company</a>
+                <a href="https://boards.greenhouse.io/pokemoncareers">Carreers</a>
+                <a href="https://www.pokemon.com/us/country-region/">Select your Country/Region</a>
+                <a href="https://press.pokemon.com/es">Press Site</a>
+            </section>
+            <section class="social-media">
+                <div class="sm-icons">
+                    <!-- <a href="https://www.facebook.com/pokemon"><img class="sm-icon" src="img/socialmedia/Facebook_white_logo.png" alt="https://assets.pokemon.com/static2/_ui/img/footer/social-icons.png" alt="Facebook_white_logo"></a>
+                    <a href="https://www.youtube.com/user/Pokemon"><img class="sm-icon" src="img/socialmedia/YouTube_white_logo.png" alt="YouTube_white_logo"></a>
+                    <a href="https://www.twitter.com/pokemon"><img class="sm-icon" src="img/socialmedia/X_white_logo.png" alt="X_white_logo"></a>
+                    <a href="https://www.instagram.com/pokemon"><img class="sm-icon" src="img/socialmedia/Instagram_white_logo.png" alt="Instagram_white_logo"></a>
+                    <a href="https://www.pinterest.com/pokemon"><img class="sm-icon" src="img/socialmedia/Pinterest_white_logo.png" alt="Pinterest_white_logo"></a> -->
+                </div>
+            </section>
+            <section class="copyright">
+                <a href="https://caru.bbbprograms.org/seal/Confirmation/1596150491"><img src="public/img/thepokemoncompanyinternational-seal-1596150491.png" alt="BBB_NATIONAL_PROGRAMS_POKEMON_COMPANY"></a> 
+                <a href="https://www.pokemon.com/us/terms-of-use/">Terms of Use</a>
+                <a href="https://www.pokemon.com/us/privacy-notice/">privacy Notice</a>
+                <a href="https://www.pokemon.com/us/cookie-page/">Cookie Page</a>
+                <a href="https://www.pokemon.com/us/legal/">Legal Info</a>
+                <a href="https://www.pokemon.com/us/vulnerability-disclosure-program/">Security</a>
+                <label class="disclaimer">
+                    ©2024 Pokémon. ©1995 - 2024 Nintendo/Creatures Inc./GAME FREAK inc. TM, ®Nintendo.
+                </label> 
+            </label>
+            </section>
+        </span>
+        <a id="goback" href="#name">Return to Stats</a>
+    </footer> 
+    <script src="countrylist.js"></script>
+    <script src="fetch.js"></script>
+    <script src="menus.js"></script>
+</body>
+</html>
