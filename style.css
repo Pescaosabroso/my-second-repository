@@ -396,6 +396,18 @@ body {
     position: relative;
 }
 
+.index-floating-cards a {
+    position: absolute;
+    display: flex;
+    bottom: -325;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px grey;
+}
+
 .i-card4 {
     z-index: 5;
     bottom: -200;
@@ -426,15 +438,6 @@ body {
 
 .i-card1 {
     z-index: 5;
-    bottom: -325;
-    position: absolute;
-    display: flex;
-    left: -125;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    box-shadow: 10px 10px 5px grey;
 }
 
 .i-card2 {
