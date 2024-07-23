@@ -334,6 +334,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 5%;
+    height: 28rem;
 }
 
 .index-header {
@@ -376,6 +377,8 @@ body {
 }
 
 .index-search input {
+    border: #000;
+    border-width: 2px;
     height: 100%;
     width: 100%;
     padding: 0.5rem 2rem;
@@ -394,6 +397,7 @@ body {
 .index-floating-cards {
     display: flex;
     position: relative;
+    height: 0rem;
 }
 
 .index-floating-cards a {
@@ -410,77 +414,72 @@ body {
 
 .i-card4 {
     z-index: 5;
-    bottom: -200;
+    bottom: -250px;
     position: absolute;
     display: flex;
-    left: 0;
-    right: 0;
+    right: 0px;
+    left: -700px;
     margin-left: auto;
     margin-right: auto;
-    z-index: 1;
     border-radius: 10px;
     box-shadow: 10px 10px 5px grey;
 }
 
 .i-card3 {
     z-index: 1;
-    bottom: -280;
+    bottom: -150px;
     position: absolute;
     display: flex;
-    left: -150;
-    right: 0;
+    left: 0px;
+    right: -350px;
     margin-left: auto;
     margin-right: auto;
-    z-index: 1;
     border-radius: 10px;
     box-shadow: 10px 10px 5px grey;
 }
 
 .i-card1 {
     z-index: 5;
-    bottom: -280;
+    bottom: -200px;
     position: absolute;
     display: flex;
-    left: -150;
+    left: -120px;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    z-index: 1;
     border-radius: 10px;
     box-shadow: 10px 10px 5px grey;
 }
 
 .i-card2 {
     z-index: 1;
-    bottom: -200;
+    bottom: -150px;
     position: absolute;
     display: flex;
-    left: 0;
-    right: 0;
+    right: 0px;
+    left: -350px;
     margin-left: auto;
     margin-right: auto;
-    z-index: 1;
     border-radius: 10px;
     box-shadow: 10px 10px 5px grey;
 }
 
 .i-card5 {
     z-index: 5;
-    bottom: -200;
+    bottom: -250px;
     position: absolute;
     display: flex;
-    left: 0;
-    right: 0;
+    left: 0px;
+    right: -700px;
     margin-left: auto;
     margin-right: auto;
-    z-index: 1;
     border-radius: 10px;
     box-shadow: 10px 10px 5px grey;
 }
 
 .index-footer {
-    /* position: relative; */
-    z-index: -1;
+    position: relative;
+    z-index: 100;
     background-color: #fff;
     padding: 3rem 1.5rem 6rem;;
     color: #1a1919;
