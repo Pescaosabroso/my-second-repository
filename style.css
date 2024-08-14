@@ -515,6 +515,9 @@ body {
 }
 /* Index only classes */
 
+/* Search Query only classes */
+/* Search Query classes */
+
 .query-square {
     display: flex;
     flex-direction: column;
